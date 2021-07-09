@@ -424,6 +424,7 @@
         </div>
       </div>
     </footer>
+    <!-- ------------MODAL ICON-------------- -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
@@ -433,50 +434,53 @@
         </button>
         <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
         <form class="form">
-          <div class="form-field">
-            <label for="name" class="form-label">Имя</label>
+          <label for="name" class="form-field"
+            ><span class="form-label">Имя</span>
             <div class="form-wrap">
-              <input type="text" id="name" required class="form-input" />
-              <svg width="12" height="12" class="form-icon">
+              <input type="text" required class="form-input" />
+              <svg width="18" height="18" class="form-icon">
                 <use href="./images/sprite.svg#username"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="form-field">
-            <label for="tel" class="form-label">Телефон</label>
+              </svg></div
+          ></label>
+
+          <label for="tel" class="form-field"
+            ><span class="form-label">Телефон</span>
             <div class="form-wrap">
-              <input type="tel" id="tel" required class="form-input" />
-              <svg width="13" height="13" class="form-icon">
+              <input type="tel" required class="form-input" />
+              <svg width="18" height="18" class="form-icon">
                 <use href="./images/sprite.svg#call"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="form-field">
-            <label for="email" class="form-label">Почта</label>
+              </svg></div
+          ></label>
+
+          <label for="email" class="form-field"
+            ><span class="form-label">Почта</span>
             <div class="form-wrap">
-              <input type="email" id="email" required class="form-input" />
-              <svg width="15" height="12" class="form-icon">
+              <input type="email" required class="form-input" />
+              <svg width="18" height="18" class="form-icon">
                 <use href="./images/sprite.svg#black-list"></use>
               </svg>
             </div>
-          </div>
-          <div class="form-field">
-            <label for="coment" class="form-label">Комментарий</label>
+          </label>
+
+          <label for="coment" class="form-field"
+            ><span class="form-label">Комментарий</span>
             <textarea
               name="coment"
-              id="coment"
               rows="5"
               placeholder="Введите текст"
               class="form-coment"
             ></textarea>
-          </div>
-          <div class="form-checkbox">
-            <input type="checkbox" id="yes" required class="form-input" />
-            <label for="yes" class="form-checkbox-label"
+          </label>
+
+          <label for="yes" class="form-checkbox"
+            ><input type="checkbox" id="yes" required class="form-input-checkbox" />
+            <span class="checkbox-icon"></span>
+            <span class="form-checkbox-label"
               >Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="checkbox-link">Условия договора</a></label
+              <a href="#" class="checkbox-link">Условия договора</a></span
             >
-          </div>
+          </label>
+
           <button type="submit" class="form-button main-button">Отправить</button>
         </form>
       </div>

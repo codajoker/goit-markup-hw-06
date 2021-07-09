@@ -549,12 +549,16 @@ footer .social-link {
 
   color: var(--text-headers);
 }
-.form-field:not(:last-child) {
+.form-field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
 .form-label {
+  display: block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -589,6 +593,11 @@ footer .social-link {
   left: 13px;
   transform: translateY(-50%);
 }
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon {
+  fill: var(--blue-color);
+}
+
 .form-coment {
   padding-left: 16px;
   padding-right: 16px;
@@ -606,9 +615,32 @@ footer .social-link {
   color: rgba(117, 117, 117, 0.5);
 }
 .form-checkbox {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
   margin-bottom: 30px;
+  cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.form-input-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/check.svg);
+}
+.form-input-checkbox:checked ~ .checkbox-icon {
+  background-image: url(../images/active-check.svg);
 }
 .form-checkbox-label {
+  margin-left: 7px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -617,6 +649,7 @@ footer .social-link {
 
   color: var(--text-descr);
 }
+
 .checkbox-link {
   font-family: Roboto;
   font-weight: 400;
