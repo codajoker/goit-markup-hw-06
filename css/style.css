@@ -599,12 +599,14 @@ footer .social-link {
 }
 
 .form-coment {
+  width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  resize: none;
 }
 .form-coment::placeholder {
   font-weight: 400;
@@ -632,13 +634,12 @@ footer .social-link {
 
 .checkbox-icon {
   display: inline-block;
-  border: 2px solid var(--text-headers);
-  border-radius: 2px;
+  background-image: url(../images/check.svg);
+  width: 16px;
+  height: 15px;
 }
 .form-input-checkbox:checked ~ .checkbox-icon {
-  box-sizing: content-box;
-  border: none;
-  background-color: var(--blue-color);
+  background-image: url(../images/active-check.svg);
 }
 .form-checkbox-label {
   margin-left: 7px;
@@ -776,7 +777,6 @@ footer .social-link {
   color: var(--primary-white-color);
 
   transition: var(--main-duration) var(--timing-function);
-  overflow: auto;
 }
 .work-link:hover .work-overlay,
 .work-link:focus .work-overlay {
