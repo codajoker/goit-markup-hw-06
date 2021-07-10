@@ -632,12 +632,12 @@ footer .social-link {
 
 .checkbox-icon {
   display: inline-block;
-  box-sizing: content-box;
   border: 2px solid var(--text-headers);
   border-radius: 2px;
 }
 .form-input-checkbox:checked ~ .checkbox-icon {
-  border-color: var(--blue-color);
+  box-sizing: content-box;
+  border: none;
   background-color: var(--blue-color);
 }
 .form-checkbox-label {
