@@ -776,7 +776,7 @@ footer .social-link {
   color: var(--primary-white-color);
 
   transition: var(--main-duration) var(--timing-function);
-  overflow-y: scroll;
+  overflow: auto;
 }
 .work-link:hover .work-overlay,
 .work-link:focus .work-overlay {
